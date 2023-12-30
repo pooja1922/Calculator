@@ -1,0 +1,135 @@
+<html>
+    <head>
+  
+    </head>
+    <body>
+      <div>
+       <form action="#" name="form">
+        <h1><center>Calculator</center></h1>
+        
+        <input type="text" name="n1" id="disp"><br><br>
+        <input class="one1" type="button" value="=" onclick="document.form.n1.value=eval(document.form.n1.value)"> 
+        <input class="one2" type="button" value="c" onclick="cleardata()">
+        <br><br>
+        <input class="one" type="button" value="7" onclick="document.form.n1.value+=7">
+        <input class="one" type="button" value="8" onclick="document.form.n1.value+=8">
+        <input class="one" type="button" value="9" onclick="document.form.n1.value+=9">
+        <input class="one" type="button" value="/" onclick="div()">
+        <br><br>
+        <input class="one" type="button" value="4" onclick="document.form.n1.value+=4">
+        <input class="one" type="button" value="5" onclick="document.form.n1.value+=5">
+        <input class="one" type="button" value="6" onclick="document.form.n1.value+=6">
+        <input class="one" type="button" value="*" onclick="mul()">
+        <br><br>
+        <input class="one" type="button" value="1" onclick="document.form.n1.value+=1">
+        <input class="one" type="button" value="2" onclick="document.form.n1.value+=2">
+        <input class="one" type="button" value="3" onclick="document.form.n1.value+=3">
+        <input class="one" type="button" value="-" onclick="sub()">
+        <br><br>
+        <input class="one" type="button" value="0" onclick="document.form.n1.value+=4">
+        <input class="one" type="button" value="." onclick="dot()">
+        <input class="one" type="button" value="%" onclick="mod()">
+        <input class="one" type="button" value="+" onclick="add()">
+        </form>
+    </div>
+    <script>
+        function add()
+        {
+            document.form.n1.value+="+";
+            document.form.n1.style.textAlign="right";
+        }
+        function sub()
+        {
+            document.form.n1.value+="-";
+            document.form.n1.style.textAlign="right";
+        }
+        function mul()
+        {
+            document.form.n1.value+="*";
+            document.form.n1.style.textAlign="right";
+        }
+        function div()
+        {
+            document.form.n1.value+="/";
+            document.form.n1.style.textAlign="right";
+        }
+        function mod()
+        {
+            document.form.n1.value+="%";
+            document.form.n1.style.textAlign="right";
+        }
+        function cleardata()
+        {
+            document.form.n1.value="";
+            document.form.n1.style.textAlign="right";
+        }
+    </script>
+    </body>
+    <style>
+
+        div
+        {
+            height: 550px;
+            width: 400px;
+            background-color:rgba(11, 11, 11, 0.9);
+            columns: white;
+            border-style: solid;
+            border-color:gray;
+            border-radius: 5px;
+            margin-left: 470px;
+            margin-top: 30px;
+        }
+        #disp
+        {
+            margin-left: 10px;
+            height: 60px;
+            width: 370px;
+            border-style: solid;
+            border-color:gray;
+          
+            
+        }
+        
+        h1
+        {
+            color:white;
+            
+          
+        }
+        #disp
+        {
+            background-color: white;
+        }
+        .one
+        {
+            margin-left: 33px;
+            width:55px;
+            height: 50px;
+            background-color: black;
+            color: orangered;
+            border-color: rgb(38, 14, 14);
+        }
+        .one1
+        {
+            margin-left: 13px;
+            width:90px;
+            height: 70px;
+            background-color: black;
+            color: orangered;
+            border-radius: 40px;
+            border-color:orangered;
+        }
+        .one2
+        {
+            margin-left: 13px;
+            width:220px;
+            height:70px;
+            background-color: black;
+            color: orangered;
+            border-color: rgb(38, 14, 14);
+            border-radius: 10px;
+            border-color:orangered;
+        }
+        
+    </style>
+</html>
